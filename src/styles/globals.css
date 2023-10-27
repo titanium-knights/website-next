@@ -1,0 +1,8 @@
+body {
+  overflow-x: hidden;
+  padding: 0;
+  /* background-color: rgb(31,30,33); */
+  background-image: radial-gradient(circle at top right, rgba(31,30,33,1) 0%, rgba(55,10,105,1) 32%, rgba(34,23,112,1) 60%); 
+  background-size: contain;
+  font-family: "Roboto", sans-serif;
+}

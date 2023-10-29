@@ -15,9 +15,9 @@ export default function Home() {
             <main className={styles.page}>
                 <Navbar />
                 <section className={styles.topheader}>
-                        <h1>The Titanium Knights</h1>
-                        <h3>First Tech Challenge teams 15887 and 15891</h3>
-                        <Image id="header-logo" src='/knight-in-space.png' alt='Titanium Knights logo' width={400} height={300} />
+                    <h1>The Titanium Knights</h1>
+                    <h3>First Tech Challenge teams 15887 and 15891</h3>
+                    <Image id="header-logo" src='/knight-in-space.png' alt='Titanium Knights logo' width={400} height={300} />
                 </section>
             </main>
         </>

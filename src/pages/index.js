@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from "next/font/google"
 import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
     return (
@@ -14,8 +12,13 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={styles.main}>
-        
+            <main className={styles.page}>
+                <Navbar />
+                <section className={styles.topheader}>
+                        <h1>The Titanium Knights</h1>
+                        <h3>First Tech Challenge teams 15887 and 15891</h3>
+                        <Image id="header-logo" src='/knight-in-space.png' alt='Titanium Knights logo' width={400} height={300} />
+                </section>
             </main>
         </>
     )

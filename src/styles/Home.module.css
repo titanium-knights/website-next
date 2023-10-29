@@ -1,0 +1,48 @@
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+
+.topheader {
+    background-color: white;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    aspect-ratio: 4.5/2;
+    width: 85vw;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.topheader h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+}
+
+.topheader h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+.topheader img {
+    object-fit: cover;
+    display: block;
+    margin: 1rem 8vw 1rem 40vw;
+    animation: bobble 2s alternate infinite forwards ease-in-out;
+}
+
+.page {
+    padding: 0;
+}
+
+@keyframes bobble {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

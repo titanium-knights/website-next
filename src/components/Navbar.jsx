@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <aside className={styles.sidebar}>
             <ul>
-                <li><a href="/home" id='homeLink'>
+                <li><a href="/" id='homeLink'>
                     <FontAwesomeIcon icon={faHouse} />
                 </a></li>
                 <li><a href="/about" id='aboutLink'>

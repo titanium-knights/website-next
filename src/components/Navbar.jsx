@@ -4,14 +4,15 @@ import { faAddressCard } from '@fortawesome/free-regular-svg-icons'
 import { faCircleInfo, faHandshake, faHouse, faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import { Tooltip } from 'react-tooltip'
 import styles from '@/styles/navbar.module.css'
+import Link from "next/link";
 
 const Navbar = () => {
     return (
         <aside className={styles.sidebar}>
             <ul>
-                <li><a href="/" id='homeLink'>
+                <li><Link href="/" id='homeLink'>
                     <FontAwesomeIcon icon={faHouse} />
-                </a></li>
+                </Link></li>
                 <li><a href="/about" id='aboutLink'>
                     <FontAwesomeIcon icon={faCircleInfo} />
                 </a></li>

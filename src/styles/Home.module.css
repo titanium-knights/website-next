@@ -1,17 +1,20 @@
 .page {
-    overflow-x: hidden;
-    box-sizing: border-box;
+    margin: 1.5rem;
+    padding: 0;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem 1rem;
 }
 
 .topheader {
-    background-color: white;
     border-radius: 2.5rem;
-    padding: 2rem;
+    background-color: white;
     box-sizing: border-box;
-    aspect-ratio: 4.5/2;
-    width: 85vw;
-    margin: 2rem auto;
+    padding: 2rem;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    grid-column: 1/3;
+    grid-row: 1/2;
 }
 
 .topheader h1 {
@@ -23,15 +26,28 @@
     font-family: "Roboto", sans-serif;
 }
 
-.topheader img {
-    object-fit: cover;
+.knightImage {
     display: block;
-    margin: 1rem 8vw 1rem 40vw;
     animation: bobble 2s alternate infinite forwards ease-in-out;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
-.page {
-    padding: 0;
+@media (max-width: 768px) {
+    .page {
+        /* swap template rows and columns */
+        grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr);
+        place-items: center;
+        margin: 2rem;
+    }
+    .topheader {
+        grid-column: 1/1;
+    }   
+    .knightImage {
+        grid-row: 2/3;
+        grid-column: 1/1;
+    }
 }
 
 @keyframes bobble {

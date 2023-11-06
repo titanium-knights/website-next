@@ -12,13 +12,13 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <Navbar />
             <main className={styles.page}>
-                <Navbar />
                 <section className={styles.topheader}>
                     <h1>The Titanium Knights</h1>
                     <h3>First Tech Challenge teams 15887 and 15891</h3>
-                    <Image id="header-logo" src='/knight-in-space.png' alt='Titanium Knights logo' width={400} height={300} />
                 </section>
+                <Image className={styles.knightImage} id="header-logo" src='/knight-in-space.png' alt='Titanium Knights logo' width={400} height={300} />
             </main>
         </>
     )
